@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <title>IP Address Tracker</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-title"><h3>IP Address Tracker</h3></div>
+
+        <div class="search-bar">
+            <div id="loading"></div>
+            <input type="text" id="ip-input" placeholder="Search for any IP address or domain" />
+            <button id="search-btn"><i class="uil uil-search"></i></button>
+        </div>
+    <div class='data'>
+        <section>
+            <div class="data-title">IP ADDRESS</div>
+            <div id="ipaddress">&nbsp;</div>
+        </section>
+        <section>
+            <div class="data-title">LOCATION</div>
+            <div id="location">&nbsp;</div>
+        </section>
+        <section>
+            <div class="data-title">TIMEZONE</div>
+            <div id="timezone">&nbsp;</div>
+        </section>
+        <section>
+            <div class="data-title">ISP</div>
+            <div id="isp">&nbsp;</div>
+        </section>
+    </div>
+    </div>
+
+    <div id="mapid"></div>
+
+    <script src="main.js"></script>  
+</body>
+</html>
